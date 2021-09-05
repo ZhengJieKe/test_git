@@ -46,8 +46,8 @@ class Web_Spider(object):
 def test_one():
     one = Web_Spider("李毅")
     one.run_spider()
-
-
+def test_two():
+    pass
 
 
 if __name__ == "__main__":
