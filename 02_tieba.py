@@ -19,7 +19,7 @@ class Web_Spider(object):
 
     def save_webpage(self,data,i):
 
-        new_webpage = "{}å§çš„ç¬¬{}ä¸ªç½‘é¡µ.html".format(self.name,i)
+        new_webpage = "{}°ÉµÄµÚ{}¸öÍøÒ³.html".format(self.name,i)
         with open (new_webpage,'w',encoding="utf-8") as f:
             f.write(data)
             f.close()
@@ -27,29 +27,29 @@ class Web_Spider(object):
 
 
     def run_spider(self):
-        #è¯»å–urlçš„åˆ—è¡¨
+        #¶ÁÈ¡urlµÄÁĞ±í
         heard_list = self.url_list()
-        #æ‰“å¼€url
+        #´ò¿ªurl
 
-        #çˆ¬ä¸‹ç½‘é¡µ
+        #ÅÀÏÂÍøÒ³
         for i in range(10):
             responese = requests.get(self.first_url,heard_list[i])
             data = responese.content.decode()
             #print(data)
             self.save_webpage(data,i)
-        #ä¿å­˜ç½‘é¡µ
+        #±£´æÍøÒ³
 
 
 
         pass
 
 def test_one():
-    one = Web_Spider("ææ¯…")
+    one = Web_Spider("ÀîÒã")
     one.run_spider()
 def test_two():
     pass
 
 def test_three():
-    pass
+    print("1")
 if __name__ == "__main__":
     test_one()
