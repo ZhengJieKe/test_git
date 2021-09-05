@@ -52,5 +52,6 @@ def test_two():
 def test_three():
     print("1")
     print("西瓜好漂亮")
+    print("1243")
 if __name__ == "__main__":
     test_one()
