@@ -49,6 +49,7 @@ def test_one():
 def test_two():
     pass
 
-
+def test_three():
+    pass
 if __name__ == "__main__":
     test_one()
